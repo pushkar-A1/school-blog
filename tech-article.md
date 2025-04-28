@@ -1,1 +1,52 @@
-[200~One of the latest trends in technology is Artificial Intelligence (AI) and Generative AI, which are transforming industries by automating tasks, enhancing creativity, and improving decision-making. Tools like ChatGPT, Midjourney, and AI-powered assistants are revolutionizing content creation, software development, and customer service. Additionally, Quantum Computing is making strides, promising breakthroughs in problem-solving and data encryption. The rise of 5G and Edge Computing is enabling faster, real-time data processing, while Blockchain and Web3 continue to shape the future of decentralized finance and security. With advancements in sustainable technology, such as green energy solutions and carbon-neutral data centers, innovation is becoming more environmentally conscious.
+<!-- booking.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book a Tour | Backroad</title>
+    <link rel="stylesheet" href="../css/booking.css" />
+    <link rel="stylesheet" href="../css/booking.css" />
+  </head>
+  <body>
+    <!-- Navbar (Optional: copy your navbar code here if needed) -->
+
+    <section class="section">
+      <div class="section-title">
+        <h2>Book Your <span>Tour</span></h2>
+      </div>
+
+      <div class="section-center booking-form-container">
+        <form id="bookingForm" onsubmit="return validateBookingForm()" class="form">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-row">
+            <label for="destination">Destination</label>
+            <input type="text" id="destination" placeholder="Enter Destination" required />
+          </div>
+          <div class="form-row">
+            <label for="date">Date</label>
+            <input type="date" id="date" required />
+          </div>
+          <div class="form-row">
+            <label for="people">No. of People</label>
+            <input type="number" id="people" placeholder="1 or more" min="1" required />
+          </div>
+          <div class="form-row">
+            <button type="submit" class="btn">Book Now</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer (optional) -->
+
+    <script src="../js/booking.js"></script>
+  </body>
+</html>
